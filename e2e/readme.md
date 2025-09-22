@@ -60,6 +60,7 @@ Se ha creado un directorio de captura de pantallas de la secuencia probada y tam
 [/cypress/screenshots/workflowBuying.cy.js/](cypress/screenshots/workflowBuying.cy.js/)
 
 Las capturas que se realizan son:
+
 **1 Visiting the main page.png**
 <figure>
 <img src="cypress/screenshots/workflowBuying.cy.js/1 Visiting the main page.png"/>
