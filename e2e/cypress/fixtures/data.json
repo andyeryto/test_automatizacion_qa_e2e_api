@@ -1,0 +1,21 @@
+{
+  "testWebPageMain": "https://www.demoblaze.com",
+  "testWebPageCart": "/cart.html",
+  "productName1": "Samsung galaxy s6",
+  "productName2": "Nokia lumia 1520",
+  "messageAddToCart": "Add to cart",
+  "messageProductAdded": "Product added",
+  "messagePurchaseReady": "Thank you for your purchase!",
+  "country": "Ecuador",
+  "city": "Quito",
+  "card": "5432 1234 1234 1234",
+  "month": "12",
+  "year": "2030",
+  "name": " Andres Rosero",
+  "step1": "1 Visiting the main page",
+  "step2": "2 First product",
+  "step3": "3 Second product",
+  "step4": "4 Check the cart",
+  "step5": "5 Adding the form information",
+  "step6": "6 Verification of the final end process message"
+}

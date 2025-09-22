@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-21T07:48:12.898Z",
+    "end": "2025-09-21T07:48:26.775Z",
+    "duration": 13877,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "749a0477-dd01-4829-9f08-71247cdfcc0f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\workflowBuying.cy.js",
+      "file": "cypress\\e2e\\workflowBuying.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9cd51935-cac8-42d6-8978-303a8bade66c",
+          "title": "DemoBlaze purchase workflow.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add two products into the cart and complete the purchase",
+              "fullTitle": "DemoBlaze purchase workflow. Add two products into the cart and complete the purchase",
+              "timedOut": null,
+              "duration": 11710,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Visiting the main page\ncy.visit(testData.testWebPageMain);\ncy.document().its('readyState').should('eq', 'complete');\ncy.log(testData.step1);\ncy.screenshot(testData.step1);\n// First product\ncy.contains('a', testData.productName1).click();\ncy.contains('a', testData.messageAddToCart).click();\ncy.on('window:alert', message => {\n  expect(message).to.contain(testData.messageProductAdded);\n});\ncy.go('back');\ncy.go('back');\ncy.log(testData.step2);\ncy.screenshot(testData.step2);\n// Second product\ncy.contains('a', testData.productName2).click();\ncy.contains('a', testData.messageAddToCart).click();\ncy.on('window:alert', message => {\n  expect(message).to.contain(testData.messageProductAdded);\n});\ncy.go('back');\ncy.go('back');\ncy.log(testData.step3);\ncy.screenshot(testData.step3);\n// Check the cart\ncy.visit(testData.testWebPageMain + testData.testWebPageCart);\ncy.document().its('readyState').should('eq', 'complete');\ncy.get('#tbodyid tr').should('have.length.at.least', 2);\ncy.log(testData.step4);\ncy.screenshot(testData.step4);\n// Adding the form information\ncy.contains('Place Order').click();\ncy.get('#name').type(testData.name);\ncy.get('#country').type(testData.country);\ncy.get('#city').type(testData.city);\ncy.get('#card').type(testData.card);\ncy.get('#month').type(testData.month);\ncy.get('#year').type(testData.year);\ncy.log(testData.step5);\ncy.screenshot(testData.step5);\ncy.contains('Purchase').click();\n// Verification of the final end process message.\ncy.contains(testData.messagePurchaseReady).should('be.visible');\ncy.log(testData.step6);\ncy.screenshot(testData.step6);",
+              "err": {},
+              "uuid": "2eca52c8-863e-4e7f-829d-4a7c38985ed5",
+              "parentUUID": "9cd51935-cac8-42d6-8978-303a8bade66c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2eca52c8-863e-4e7f-829d-4a7c38985ed5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11710,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "workflowBuying-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "reportFilename": "workflowBuying-report"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"examples\/pets\/pets[1:7]","start":1758507345659,"end":1758507467043,"title":"examples\/pets\/pets[1:7] 21:15:45.659-21:17:47.043 Add a pet"},{"id":2,"group":1,"content":"examples\/pets\/pets[2:45]","start":1758507467064,"end":1758507467740,"title":"examples\/pets\/pets[2:45] 21:17:47.064-21:17:47.740 Search the pet created recently"},{"id":3,"group":1,"content":"examples\/pets\/pets[3:55]","start":1758507467752,"end":1758507708146,"title":"examples\/pets\/pets[3:55] 21:17:47.752-21:21:48.146 Update the pet name and the status to \"sold\""},{"id":4,"group":1,"content":"examples\/pets\/pets[4:79]","start":1758507708154,"end":1758507708921,"title":"examples\/pets\/pets[4:79] 21:21:48.154-21:21:48.921 Search by status last pet modified recently"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

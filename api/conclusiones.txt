@@ -1,0 +1,22 @@
+HALLAZGOS
+- Luego de hacer varias pruebas en el api petstore.swagger.io se determinó que tiene un tiemo de espera para que los datos
+    insertados o actualizados mantengan integridad. Por ejemplo para el recurso **pet** luego de usar el método post /pet
+    para crear una mascota hay que esperar, de acuerdo a la percepción del momento, unos 60 segundos para que el siguiente
+    método get /pet/{petId} encontrar por petId pueda encontrar un resultado válido. Por otro lado, para el flujo de actua-
+    lizar el esstado de un pet y luego buscar por estado, también se encontró que el tiempo de espera es de aproximadamente
+    3 minutos, tiempo en el cual el api mantiene íntegros los datos.
+    Por lo que se procedió a incorporar un timer de espera entre pruebas para lograr el comedido de la prueba y conseguir
+    assertions válidos.
+
+- Se encotró también que el API no valida la estructura o esquema de los pets nuevo ingresados si no se envian datos el api
+    lo crea con valores nulos o vacíos por defecto, que está bien para efectos prácticos pero que serían de mucha ayuda si
+    el api tuviera o arrojara errores de validación de datos. Pero para efectos de prueba es un API sencillo y válido que
+    sin duda alguna presentaría muchos errores y problemas si se llegara a publicar en producción un api de su estilo.
+
+CONCLUSIONES
+- Se concluye que el api presenta problemas de integridad de datos luego de realizar afectaciones en los métodos POST y
+    UPDATE, por lo que se requiere tiempos de espera que superan los 3 segundos para que haya consistencia en los datos.
+
+- Por temas de integridad el API debería regresar a la fase de desarrollo para mejorar temas de validación y para que los
+    datos se mantengan íntegros después de realizar alguna afectación, por ejemplo luego de insertar, de actualizar o de
+    borrar.

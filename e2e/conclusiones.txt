@@ -1,0 +1,13 @@
+HALLAZGOS
+- Luego de hacer varias pruebas en el sitio demoblaze.com se determina que el flujo de compra
+    se completa satisfactoriamente sin problema alguno.
+- También se evidencia que dicho sitio web es bastante sencillo y no cuenta con validaciones
+    avanzadas, no requiere parametros o validaciones adicionales para completar la compra, por
+    ejemplo que la tarjeta de crédito sea válida. (Claro se sobreentiende que es por propósitos
+    de prueba y validación).
+
+CONCLUSIONES
+- El sitio web responde exitósamente a la especificación del flujo de compra especificado en el
+    requerimiento de la prueba.
+- Al ser una prueba bastante sencilla se completa el flujo en aproximadamente menos de 13 segun-
+    dos.
