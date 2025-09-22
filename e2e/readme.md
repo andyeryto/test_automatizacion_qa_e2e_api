@@ -7,7 +7,7 @@ Esta prueba E2E permite validar el flujo siguiente:
 - Finalizar la compra
 
 ## Implementación
-Este flujo de prueba se ha implementado en un solo archivo, ubicado en:
+Este flujo de prueba se ha implementado en un archivo que contiene los 4 escenarios, ubicado en:
 [cypress/e2e/workflowBuying.cy.js](cypress/e2e/workflowBuying.cy.js)
 
 ## Instrucciones - Paso a pasa de ejecución
@@ -31,7 +31,7 @@ Seleccione: Edge
 Clic en: Start E2E Testing in Edge
 ```
 4. Revisión del reporte generado
-   [cypress/reports/workflowBuying-report.html](/cypress/reports/workflowBuying-report.html)
+   [cypress/reports/workflowBuying-report.html](cypress/reports/workflowBuying-report.html)
 5. Revisión de las capturas de pantalla generados:
 [Capturas](#capturas-de-pantalla)
 
@@ -44,11 +44,11 @@ Los scripts de ejecución y dependencias están definidos en:
 
 ## Archivo fixture
 Utiliza un archivo fixture con los datos de prueba usados en el test para fácil acceso y mantenimiento rápido, llamado:
-[cypress/fixtures/data.json](/cypress/fixtures/data.json)
+[cypress/fixtures/data.json](cypress/fixtures/data.json)
 
 ## Reporte
 Se ha creado un reporte visual para ver el estado de la última prueba realizada, ubicado en la ruta:
-[cypress/reports/workflowBuying-report.html](/cypress/reports/workflowBuying-report.html)
+[cypress/reports/workflowBuying-report.html](cypress/reports/workflowBuying-report.html)
 
 <figure>
 <img src="cypress/images/ReportImage.png" alt="Reporte de la prueba."/>
@@ -57,15 +57,15 @@ Se ha creado un reporte visual para ver el estado de la última prueba realizada
 
 ## Capturas de pantalla
 Se ha creado un directorio de captura de pantallas de la secuencia probada y también para cuando la prueba falle, ubicado en la ruta:
-[/cypress/screenshots/workflowBuying.cy.js/](/cypress/screenshots/workflowBuying.cy.js/)
+[/cypress/screenshots/workflowBuying.cy.js/](cypress/screenshots/workflowBuying.cy.js/)
 
 Las capturas que se realizan son:
-- [1 Visiting the main page.png](/cypress/screenshots/workflowBuying.cy.js/1 Visiting the main page.png)
-- [2 First product.png](/cypress/screenshots/workflowBuying.cy.js/2 First product.png)
-- [3 Second product.png](/cypress/screenshots/workflowBuying.cy.js/3 Second product.png)
-- [4 Check the cart.png](/cypress/screenshots/workflowBuying.cy.js/4 Check the cart.png)
-- [5 Adding the form information.png](/cypress/screenshots/workflowBuying.cy.js/5 Adding the form information.png)
-- [6 Verification of the final end process message.png](/cypress/screenshots/workflowBuying.cy.js/6 Verification of the final end process message.png)
+- [1 Visiting the main page.png](cypress/screenshots/workflowBuying.cy.js/1 Visiting the main page.png)
+- [2 First product.png](cypress/screenshots/workflowBuying.cy.js/2 First product.png)
+- [3 Second product.png](cypress/screenshots/workflowBuying.cy.js/3 Second product.png)
+- [4 Check the cart.png](cypress/screenshots/workflowBuying.cy.js/4 Check the cart.png)
+- [5 Adding the form information.png](cypress/screenshots/workflowBuying.cy.js/5 Adding the form information.png)
+- [6 Verification of the final end process message.png](cypress/screenshots/workflowBuying.cy.js/6 Verification of the final end process message.png)
 
 **1 Visiting the main page.png**
 ![1](cypress/screenshots/workflowBuying.cy.js/1 Visiting the main page.png)

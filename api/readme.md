@@ -6,7 +6,7 @@ Esta prueba de API permite validar el flujo siguiente:
 - Consultar la mascota modificada por estatus (Búsqueda por status)
 
 ## Implementación
-Este flujo de prueba se ha implementado en un solo archivo, ubicado en:
+Este flujo de prueba se ha implementado en un archivo con los 4 escenarios de prueba, ubicado en:
 [src/test/java/examples/pets/pets.feature](src/test/java/examples/pets/pets.feature)
 
 ## Instrucciones - Paso a pasa de ejecución
@@ -21,7 +21,7 @@ Este flujo de prueba se ha implementado en un solo archivo, ubicado en:
 5. Revisión del reporte generado
    [file:///<UBICACIÓN_DEL_REPOSITORIO>/api/target/karate-reports/examples.pets.pets.html](target/karate-reports/examples.pets.pets.html)
 6. Revisión de la evidencia con capturas de pantalla:
-   [Capturas](#capturas-de-pantalla)
+   [Evidencias](#evidencias-de-ejecución-vía-consola)
 
 ## Archivo POM de configuración
 El archivo de configuración POM está definido en:
@@ -33,7 +33,8 @@ Por cada ejecución de pruebas se crea un reporte visual, para ver el estado de 
 [file:///<UBICACIÓN_DEL_REPOSITORIO>/api/target/karate-reports/examples.pets.pets.html](target/karate-reports/examples.pets.pets.html)
 
 ![2](images/Reporte01.png)
-Reporte generado por cada prueba ejecutada
+
+Reporte generado por cada prueba ejecutada con los 4 escenarios.
 
 ### Seguimiento de las pruebas en la reportería
 Se puede observar los 4 escenarios de pruebas:
