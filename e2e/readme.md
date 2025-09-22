@@ -68,17 +68,22 @@ Las capturas que se realizan son:
 - [6 Verification of the final end process message.png](cypress/screenshots/workflowBuying.cy.js/6 Verification of the final end process message.png)
 
 **1 Visiting the main page.png**
-![1](cypress/screenshots/workflowBuying.cy.js/1 Visiting the main page.png)
+![1 Visiting the main page.png](cypress/screenshots/workflowBuying.cy.js/1 Visiting the main page.png)
+
 **2 First product.png**
 ![2](cypress/screenshots/workflowBuying.cy.js/2 First product.png)
+
 **3 Second product.png**
-![3](cypress/screenshots/workflowBuying.cy.js/3 Second product.png)
+![3 Second product.png](cypress/screenshots/workflowBuying.cy.js/3 Second product.png)
+
 **4 Check the cart.png**
-![4](cypress/screenshots/workflowBuying.cy.js/4 Check the cart.png)
+![4 Check the cart.png](cypress/screenshots/workflowBuying.cy.js/4 Check the cart.png)
+
 **5 Adding the form information.png**
-![5](cypress/screenshots/workflowBuying.cy.js/5 Adding the form information.png)
+![5 Adding the form information.png](cypress/screenshots/workflowBuying.cy.js/5 Adding the form information.png)
+
 **6 Verification of the final end process message.png**
-![6](cypress/screenshots/workflowBuying.cy.js/6 Verification of the final end process message.png)
+![6 Verification of the final end process message.png](cypress/screenshots/workflowBuying.cy.js/6 Verification of the final end process message.png)
 
 ## Hallazgos y Concluciones
 Para revisar los hallazgos y las conclusioines encontradas en estas pruebas revisar el archivo:
